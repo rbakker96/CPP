@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   megaphone.cpp                                      :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2020/07/21 17:41:49 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/07/21 17:51:20 by roybakker     ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/07/21 17:41:49 by roybakker         #+#    #+#             */
+/*   Updated: 2020/07/27 14:40:37 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
+#include <cctype>
 
 int     main(int argv, char **argc)
 {

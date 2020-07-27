@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                         ::::::::             #
-#    Makefile                                           :+:    :+:             #
-#                                                      +:+                     #
-#    By: roybakker <roybakker@student.codam.nl>       +#+                      #
-#                                                    +#+                       #
-#    Created: 2020/07/21 17:41:58 by roybakker     #+#    #+#                  #
-#    Updated: 2020/07/21 18:12:57 by roybakker     ########   odam.nl          #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/07/21 17:41:58 by roybakker         #+#    #+#              #
+#    Updated: 2020/07/27 14:32:24 by rbakker          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SOURCES	= 	megaphone.cpp
 
 OBJECTS_S =	${SOURCES:%.cpp=%.o}
 
-FLAGS =		-Wall -Wextra -Werror
+FLAGS =		-Wall -Wextra -Werror -std=c++98
 COMPILE	=	clang++
 
 
