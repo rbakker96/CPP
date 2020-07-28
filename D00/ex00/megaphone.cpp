@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/21 17:41:49 by roybakker         #+#    #+#             */
-/*   Updated: 2020/07/27 14:40:37 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/07/28 10:38:06 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ int     main(int argv, char **argc)
         {
             text = argc[current_arg];
             for (index = 0; index < text.length(); index++)
-            {
                 text[index] = toupper(text[index]);
-            }
             std::cout << text;
         }
     std::cout << '\n';

@@ -6,25 +6,25 @@
 #    By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/21 17:41:58 by roybakker         #+#    #+#              #
-#    Updated: 2020/07/27 14:32:24 by rbakker          ###   ########.fr        #
+#    Updated: 2020/07/28 13:29:07 by rbakker          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME 		= 	megaphone
 
-SOURCES	= 	megaphone.cpp
+SOURCES		= 	megaphone.cpp
 
-OBJECTS_S =	${SOURCES:%.cpp=%.o}
+OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
-FLAGS =		-Wall -Wextra -Werror -std=c++98
-COMPILE	=	clang++
+FLAGS 		=	-Wall -Wextra -Werror -std=c++98
+COMPILE		=	clang++
 
 
-GREEN = \033[38;5;46m
-WHITE = \033[38;5;15m
-GREY = \033[38;5;8m
-ORANGE = \033[38;5;202m
-RED = \033[38;5;160m
+GREEN 		= 	\033[38;5;46m
+WHITE 		= 	\033[38;5;15m
+GREY 		= 	\033[38;5;8m
+ORANGE 		= 	\033[38;5;202m
+RED 		= 	\033[38;5;160m
 
 all: $(NAME)
 
@@ -32,13 +32,13 @@ all: $(NAME)
 	@echo "$(GREY)Compiling...				$(WHITE)$<"
 	@$(COMPILE) -c $(SOURCES)
 
-$(NAME): $(OBJECTS_S)
-	@$(COMPILE) $(FLAGS) $(OBJECTS_S) -o $(NAME)
+$(NAME): $(OBJECTS)
+	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
 	@echo "$(GREEN)Use exe - megaphone"
 
 clean:
 	@echo "$(RED)Deleting objectfiles"
-	@/bin/rm -f $(OBJECTS_S)
+	@/bin/rm -f $(OBJECTS)
 
 fclean: clean
 	@echo "$(RED)Deleting executable"
