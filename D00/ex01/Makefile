@@ -1,4 +1,4 @@
-NAME 		= 	golden_guide
+NAME 		= 	phonebook
 
 SOURCES		= 	main.cpp Contact.class.cpp
 
@@ -9,7 +9,7 @@ COMPILE		=	clang++
 
 
 GREEN 		= 	\033[38;5;46m
-WHITE 		= 	\033[38;5;15m
+WHITE 		= 	\033[38;5;255m
 GREY 		= 	\033[38;5;8m
 ORANGE 		= 	\033[38;5;202m
 RED 		= 	\033[38;5;160m
@@ -17,19 +17,29 @@ RED 		= 	\033[38;5;160m
 all: $(NAME)
 
 %.o: %.cpp
-	@echo "$(GREY)Compiling...				$(WHITE)$<"
-	@$(COMPILE) -c $(SOURCES)
+	@echo "$(GREY)----------------------------------------------------"
+	@echo "$(GREY)Compiling			$@"
+	@echo "$(GREY)----------------------------------------------------"
+	@$(COMPILE) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS)
 	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
-	@echo "$(GREEN)Use exe - golden_guide"
+	@echo "$(GREEN)----------------------------------------------------"
+	@echo "Executable			./phonebook"
+	@echo "$(GREEN)----------------------------------------------------"
 
 clean:
-	@echo "$(RED)Deleting objectfiles"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "$(RED)Deleting			$(WHITE)main.o"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "$(RED)Deleting			$(WHITE)Contact.class.o"
+	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(OBJECTS)
 
 fclean: clean
-	@echo "$(RED)Deleting executable"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "Deleting			$(WHITE)./phonebook"
+	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
 
 re: fclean all
