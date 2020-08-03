@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/31 11:23:16 by roybakker         #+#    #+#             */
-/*   Updated: 2020/08/03 15:35:38 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/03 17:03:04 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ public:
     Zombie(void);
     ~Zombie(void);
     void            announce();
-    std::string     randomName();
-    
+    void            set_value(std::string name, std::string type);
+   
 private:
     std::string     _name;
     std::string     _type;

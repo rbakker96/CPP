@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/03 14:25:10 by rbakker           #+#    #+#             */
-/*   Updated: 2020/08/03 15:52:31 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/03 17:21:54 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,7 @@
 
 int     main(void)
 {
-    ZombieHorde horde(5);
+    ZombieHorde horde(15);
+
+    horde.announce();
 }

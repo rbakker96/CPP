@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/03 14:33:41 by rbakker           #+#    #+#             */
-/*   Updated: 2020/08/03 14:50:00 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/03 17:02:50 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,12 @@ public:
     ZombieHorde(int N);
     ~ZombieHorde(void);
 
+    void            announce();
     std::string     randomName();    
 
 private:
-    std::string     _chosen_type;
-
+    Zombie      *_zombie_horde;
+    int         counter;
 };
 
 #endif
