@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/31 11:23:37 by roybakker         #+#    #+#             */
-/*   Updated: 2020/08/03 14:34:01 by rbakker          ###   ########.fr       */
+/*   Created: 2020/07/31 11:23:16 by roybakker         #+#    #+#             */
+/*   Updated: 2020/08/03 15:35:38 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_CLASS_H
-#define ZOMBIE_EVENT_CLASS_H
-#include "Zombie.hpp"
+#ifndef ZOMBIE_CLASS_H
+#define ZOMBIE_CLASS_H
 #include <string>
 
-class ZombieEvent {
+class Zombie {
 
 public:
 
-    ZombieEvent(void);
-    ~ZombieEvent(void);
-
-    void            setZombieType(std::string type);
-    Zombie          *newZombie(std::string name);
-    void            randomChump(void);
-
+    Zombie(void);
+    ~Zombie(void);
+    void            announce();
+    std::string     randomName();
+    
 private:
-    std::string     _chosen_type;
+    std::string     _name;
+    std::string     _type;
 
 };
 

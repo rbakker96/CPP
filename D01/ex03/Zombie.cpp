@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.cpp                                    :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/31 11:23:28 by roybakker         #+#    #+#             */
-/*   Updated: 2020/08/03 15:53:36 by rbakker          ###   ########.fr       */
+/*   Created: 2020/07/31 11:23:06 by roybakker         #+#    #+#             */
+/*   Updated: 2020/08/03 15:53:25 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Zombie.hpp"
-#include "ZombieEvent.hpp"
 #include <string>
 #include <array>
 
-ZombieEvent::ZombieEvent( void )
-{}
-
-void            ZombieEvent::setZombieType(std::string type)
+Zombie::Zombie()
 {
-    this->_chosen_type = type;             
+    _name = randomName();
+    _type = "Horde member";
+    announce();
 }
 
-
-Zombie          *ZombieEvent::newZombie(std::string name)
+void    Zombie::announce()
 {
-    Zombie  *zombie= new Zombie(name, this->_chosen_type);
-    return (zombie);   
+    std::cout << "<" << this->_name << " (" << this->_type << ")>" << " He wants braiiiiiiinnnssss..." << std::endl;
 }
 
-void     ZombieEvent::randomChump()
+std::string     Zombie::randomName()
 {
     std::array<std::string, 8> zombie_names;
     zombie_names[0] = "Creeper";
@@ -43,8 +39,11 @@ void     ZombieEvent::randomChump()
     zombie_names[6] = "Walking dead";
     zombie_names[7] = "Cold body";
     
-    Zombie zombie(zombie_names[rand() % 8], this->_chosen_type);
+    return (zombie_names[rand() % 8]);
 }
 
-ZombieEvent::~ZombieEvent()
-{}
+
+Zombie::~Zombie()
+{
+    std::cout << "<" << this->_name << ">" << " has returned to the land of the death" << std::endl;
+}

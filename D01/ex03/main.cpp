@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/31 11:23:37 by roybakker         #+#    #+#             */
-/*   Updated: 2020/08/03 14:34:01 by rbakker          ###   ########.fr       */
+/*   Created: 2020/08/03 14:25:10 by rbakker           #+#    #+#             */
+/*   Updated: 2020/08/03 15:52:31 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_CLASS_H
-#define ZOMBIE_EVENT_CLASS_H
+#include <cstdlib>
+#include <iostream>
 #include "Zombie.hpp"
+#include "ZombieHorde.hpp"
 #include <string>
 
-class ZombieEvent {
-
-public:
-
-    ZombieEvent(void);
-    ~ZombieEvent(void);
-
-    void            setZombieType(std::string type);
-    Zombie          *newZombie(std::string name);
-    void            randomChump(void);
-
-private:
-    std::string     _chosen_type;
-
-};
-
-#endif
+int     main(void)
+{
+    ZombieHorde horde(5);
+}

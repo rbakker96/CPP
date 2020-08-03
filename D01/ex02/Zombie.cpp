@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/31 11:23:06 by roybakker         #+#    #+#             */
-/*   Updated: 2020/08/03 14:22:43 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/03 15:50:34 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void    Zombie::announce()
 
 Zombie::~Zombie()
 {
-    std::cout << "<" << this->_name << ">" << " has officially returned to the land of the death" << std::endl;
+    std::cout << "<" << this->_name << ">" << " has returned to the land of the death" << std::endl;
 }
