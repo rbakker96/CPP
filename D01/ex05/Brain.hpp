@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/03 17:32:01 by rbakker           #+#    #+#             */
-/*   Updated: 2020/08/03 17:57:28 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/04 11:53:48 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@ public:
     Brain(void);
     ~Brain(void);
 
-    void        identify();
+    const Brain     *identify() const;
 
 private:
+     
 
 };
 
