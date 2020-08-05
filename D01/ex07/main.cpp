@@ -6,7 +6,7 @@
 /*   By: rbakker <rbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/04 15:24:32 by rbakker           #+#    #+#             */
-/*   Updated: 2020/08/04 17:40:18 by rbakker          ###   ########.fr       */
+/*   Updated: 2020/08/05 15:04:41 by rbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ int     main(int argc, char **argv)
 
     while (std::getline(reading, buffer))
     {  
-        std::cout << "test" << std::endl;
         if (buffer.find(s1)< buffer.length())
             buffer.replace(buffer.find(s1) , s1.length(), s2);
         if (reading.eof())
