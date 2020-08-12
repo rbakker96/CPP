@@ -1,6 +1,6 @@
 NAME 		= 	ex01
 
-SOURCES		= 	main.cpp fixed.cpp
+SOURCES		= 	main.cpp Fixed.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
@@ -32,7 +32,7 @@ clean:
 	@echo "$(RED)----------------------------------------------------"
 	@echo "$(RED)Deleting			$(WHITE)main.o"
 	@echo "$(RED)----------------------------------------------------"
-	@echo "$(RED)Deleting			$(WHITE)fixed.o"
+	@echo "$(RED)Deleting			$(WHITE)Fixed.o"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(OBJECTS)
 
