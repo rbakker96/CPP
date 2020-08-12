@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   fixed.cpp                                          :+:    :+:            */
+/*   Fixed.cpp                                          :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/11 10:26:11 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/11 17:56:48 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/12 13:54:12 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "fixed.hpp"
+#include "Fixed.hpp"
 #include <cmath>
 
 const int Fixed::_fractional_bits = 8;

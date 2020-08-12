@@ -6,12 +6,12 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/11 11:35:25 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/11 11:36:18 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/12 13:53:49 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "fixed.hpp"
+#include "Fixed.hpp"
 
 int main( void ) {
 Fixed a;
