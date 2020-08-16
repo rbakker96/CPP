@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   FragTrap.hpp                                       :+:    :+:            */
+/*   ScavTrap.hpp                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/08/12 08:32:28 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/14 10:18:26 by roybakker     ########   odam.nl         */
+/*   Created: 2020/08/14 10:25:11 by roybakker     #+#    #+#                 */
+/*   Updated: 2020/08/16 19:32:09 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_CLASS_H
-#define FRAGTRAP_CLASS_H
+#ifndef SCAVTRAP_CLASS_H
+#define SCAVTRAP_CLASS_H
 #include <string>
 
-class FragTrap {
+class ScavTrap {
 
 public:
 
-    FragTrap(void);
-	FragTrap(std::string name);
-	FragTrap(FragTrap const &src);
-    ~FragTrap(void);
+    ScavTrap(void);
+	ScavTrap(std::string name);
+	ScavTrap(ScavTrap const &src);
+    ~ScavTrap(void);
 
-	FragTrap & operator=(FragTrap const &rhs);
+	ScavTrap & operator=(ScavTrap const &rhs);
 
 	void			rangeAttack(std::string const & target);
 	void			meleeAttack(std::string const & target);
 	void			takeDamage(unsigned int amount);
 	void			beRepaired(unsigned int amount);
 
-	void			vaulthunter_dot_exe(std::string const & target);
+	void			challengeNewcomer(std::string const & target);
 
 private:
 	int							_hit_pts;

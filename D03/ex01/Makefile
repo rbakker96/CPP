@@ -1,6 +1,6 @@
-NAME 		= 	ex02
+NAME 		= 	ex01
 
-SOURCES		= 	main.cpp fixed.cpp
+SOURCES		= 	main.cpp FragTrap.cpp ScavTrap.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
@@ -25,20 +25,22 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
 	@echo "$(GREEN)----------------------------------------------------"
-	@echo "Executable			./ex02"
+	@echo "Executable			./ex01"
 	@echo "$(GREEN)----------------------------------------------------"
 
 clean:
 	@echo "$(RED)----------------------------------------------------"
 	@echo "$(RED)Deleting			$(WHITE)main.o"
 	@echo "$(RED)----------------------------------------------------"
-	@echo "$(RED)Deleting			$(WHITE)fixed.o"
+	@echo "$(RED)Deleting			$(WHITE)FragTrap.o"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "$(RED)Deleting			$(WHITE)ScavTrap.o"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(OBJECTS)
 
 fclean: clean
 	@echo "$(RED)----------------------------------------------------"
-	@echo "Deleting			$(WHITE)./ex02"
+	@echo "Deleting			$(WHITE)./ex01"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
 	@/bin/rm -f *.replace
