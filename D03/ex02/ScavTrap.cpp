@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/14 10:25:00 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/17 10:48:31 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/17 14:04:32 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,35 @@
 #include <string>
 #include <array>
 
-ScavTrap::ScavTrap(void) : 	_hit_pts(100), _max_hit_pts(100), _energy_pts(50),
-							_max_energy_pts(50), _level(1), _name("SC4V-TP"),
-						    _melee_attack_dmg(20), _ranged_attack_dmg(15),
-						    _armor_dmg_reduction(3)
+ScavTrap::ScavTrap(void) : 	ClapTrap()
 {
+	this->_hit_pts = 100;
+	this->_max_hit_pts = 100;
+	this->_energy_pts = 50;
+	this->_max_energy_pts = 50;
+	this->_level = 1;
+	this->_name = "SC4V-TP";
+	this->_melee_attack_dmg = 20;
+	this->_ranged_attack_dmg = 15;
+	this->_armor_dmg_reduction = 3;
+
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- Let's get this party started!" << std::endl;
 	return ;
 }
 
-ScavTrap::ScavTrap(std::string name) : _hit_pts(100), _max_hit_pts(100), _energy_pts(50),
-									   _max_energy_pts(50), _level(1), _name(name),
-						    		   _melee_attack_dmg(20), _ranged_attack_dmg(15),
-						               _armor_dmg_reduction(3)
+ScavTrap::ScavTrap(std::string name) : ClapTrap()
 {
+	this->_hit_pts = 100;
+	this->_max_hit_pts = 100;
+	this->_energy_pts = 50;
+	this->_max_energy_pts = 50;
+	this->_level = 1;
+	this->_name = name;
+	this->_melee_attack_dmg = 20;
+	this->_ranged_attack_dmg = 15;
+	this->_armor_dmg_reduction = 3;
+
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- Look out everybody! Things are about to get awesome!" << std::endl;
 	return ;
@@ -66,60 +80,6 @@ ScavTrap::~ScavTrap(void)
 {
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- Why did they build me out of galvanized flesh?!. I'm only level " << this->_level <<std::endl;
-	return ;
-}
-
-
-void		ScavTrap::rangeAttack(std::string const & target)
-{
-	std::cout << " \nOh, " << target << " is big... REALLY big!"<< std::endl;
-	std::cout << "[" << this->_name << "]" << " attacks " << target << " at range" << ", causing " << this->_ranged_attack_dmg << " points of damage" << std::endl;
-	return ;
-}
-
-
-void		ScavTrap::meleeAttack(std::string const & target)
-{
-	std::cout << " \nScary " << target << " over there!"<< std::endl;
-	std::cout << "[" << this->_name << "]" << " attacks " << target << " with melee " << ", causing " << this->_melee_attack_dmg << " points of damage" << std::endl;
-	return ;
-}
-
-
-void		ScavTrap::takeDamage(unsigned int amount)
-{
-	if (amount < this->_armor_dmg_reduction)
-		std::cout << "[" << this->_name << "]" << " -- My robotic flesh didn't feel anything of that!!" << " Got " << this->_hit_pts << " hp left" <<std::endl;
-	else
-	{
-		this->_hit_pts -= (amount - this->_armor_dmg_reduction);
-		if (this->_hit_pts > 0)
-			std::cout << "[" << this->_name << "]" << " -- Woah! Oh! Jeez!" << " Got " << this->_hit_pts << " hp left" <<std::endl;
-		else
-		{
-			this->_hit_pts = 0;
-			std::cout << "[" << this->_name << "]" << " -- Oh, quit falling to pieces..  I feel so weak " << " Got " << this->_hit_pts << " hp left" <<std::endl;
-		}
-	}
-	return ;
-}
-
-
-void		ScavTrap::beRepaired(unsigned int amount)
-{
-	if (this->_hit_pts == this->_max_hit_pts)
-		std::cout << "[" << this->_name << "]" << " -- No thanks all juiced up and ready to go!" <<std::endl;
-	else
-	{
-		this->_hit_pts += amount;
-		if (this->_hit_pts > this->_max_hit_pts)
-		{
-			this->_hit_pts = this->_max_hit_pts;
-			std::cout << "[" << this->_name << "]" << " -- Health! Eww, what flavor is red?" << " Got " << this->_hit_pts << " hp right now" <<std::endl;
-		}
-		else
-			std::cout << "[" << this->_name << "]" << " -- I found health!" << " Got " << this->_hit_pts << " hp right now" <<std::endl;
-	}
 	return ;
 }
 

@@ -1,6 +1,6 @@
 NAME 		= 	ex02
 
-SOURCES		= 	main.cpp fixed.cpp
+SOURCES		= 	main.cpp FragTrap.cpp ScavTrap.cpp ClapTrap.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
@@ -32,7 +32,11 @@ clean:
 	@echo "$(RED)----------------------------------------------------"
 	@echo "$(RED)Deleting			$(WHITE)main.o"
 	@echo "$(RED)----------------------------------------------------"
-	@echo "$(RED)Deleting			$(WHITE)fixed.o"
+	@echo "$(RED)Deleting			$(WHITE)FragTrap.o"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "$(RED)Deleting			$(WHITE)ScavTrap.o"
+	@echo "$(RED)----------------------------------------------------"
+	@echo "$(RED)Deleting			$(WHITE)ClapTrap.o"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(OBJECTS)
 

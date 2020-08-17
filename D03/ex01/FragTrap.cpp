@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:37 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/16 20:18:50 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/17 14:29:58 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,10 @@ FragTrap &		FragTrap::operator=(FragTrap const &rhs)
 	if (this != &rhs)
 	{
 		this->_hit_pts = rhs._hit_pts;
+		this->_max_hit_pts = rhs._max_hit_pts;
 		this->_energy_pts = rhs._energy_pts;
+		this->_max_energy_pts = rhs._max_energy_pts;
+		this->_level = rhs._level;
 		this->_name = rhs._name;
 		this->_melee_attack_dmg = rhs._melee_attack_dmg;
 		this->_ranged_attack_dmg = rhs._ranged_attack_dmg;
@@ -127,7 +130,7 @@ void		FragTrap::vaulthunter_dot_exe(std::string const & target)
 	if (this->_energy_pts >= 0 && this->_energy_pts <= this->_max_energy_pts)
 	{
 		std::array<std::string, 5> funny_attacks = {
-		"\nYou're listening to 'Short-Range Damage Radio, spoiler bullets comming your way!",
+		"\nYou're listening to 'Short-Range Damage Radio', spoiler bullets comming your way!",
 		"\nYou really can double your fun! I will demonstrate with two rockets!",
 		"\nI will cripple you with mean words, because everbody knows words do hurt!",
 		"\nI cast magic missile and you can call me Gundalf! Avada kedavra!",

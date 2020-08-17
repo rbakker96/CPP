@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:37 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/17 14:29:49 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/17 14:29:38 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,35 @@
 #include <string>
 #include <array>
 
-FragTrap::FragTrap(void) : 	_hit_pts(100), _max_hit_pts(100), _energy_pts(100),
-							_max_energy_pts(100), _level(1), _name("FR4G-TP"),
-						    _melee_attack_dmg(30), _ranged_attack_dmg(20),
-						    _armor_dmg_reduction(5)
+FragTrap::FragTrap(void) : 	ClapTrap()
 {
+	this->_hit_pts = 100;
+	this->_max_hit_pts = 100;
+	this->_energy_pts = 100;
+	this->_max_energy_pts = 100;
+	this->_level = 1;
+	this->_name = "FR4G-TP";
+	this->_melee_attack_dmg = 30;
+	this->_ranged_attack_dmg = 20;
+	this->_armor_dmg_reduction = 5;
+
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- If I had veins, they'd be popping out right now!" << std::endl;
 	return ;
 }
 
-FragTrap::FragTrap(std::string name) : _hit_pts(100), _max_hit_pts(100), _energy_pts(100),
-									   _max_energy_pts(100), _level(1), _name(name),
-						    		   _melee_attack_dmg(30), _ranged_attack_dmg(20),
-						               _armor_dmg_reduction(5)
+FragTrap::FragTrap(std::string name) : ClapTrap()
 {
+	this->_hit_pts = 100;
+	this->_max_hit_pts = 100;
+	this->_energy_pts = 100;
+	this->_max_energy_pts = 100;
+	this->_level = 1;
+	this->_name = name;
+	this->_melee_attack_dmg = 30;
+	this->_ranged_attack_dmg = 20;
+	this->_armor_dmg_reduction = 5;
+
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- Tell me I'm the prettiest!" << std::endl;
 	return ;
@@ -66,60 +80,6 @@ FragTrap::~FragTrap(void)
 {
 	std::cout << "[" << this->_name << "]";
 	std::cout << " -- I can't feel my fingers! Gah! I don't have any fingers. I'm only level " << this->_level <<std::endl;
-	return ;
-}
-
-
-void		FragTrap::rangeAttack(std::string const & target)
-{
-	std::cout << " \nThat guy looks an awful lot like a " << target << "!"<< std::endl;
-	std::cout << "[" << this->_name << "]" << " attacks " << target << " at range" << ", causing " << this->_ranged_attack_dmg << " points of damage" << std::endl;
-	return ;
-}
-
-
-void		FragTrap::meleeAttack(std::string const & target)
-{
-	std::cout << " \nRUN FOR YOUR LIIIIIVES IT'S A " << target << "!"<< std::endl;
-	std::cout << "[" << this->_name << "]" << " attacks " << target << " with melee " << ", causing " << this->_melee_attack_dmg << " points of damage" << std::endl;
-	return ;
-}
-
-
-void		FragTrap::takeDamage(unsigned int amount)
-{
-	if (amount < this->_armor_dmg_reduction)
-		std::cout << "[" << this->_name << "]" << " -- Really?! Is that all you got? That didn't even hurt me!" << " Got " << this->_hit_pts << " hp left" <<std::endl;
-	else
-	{
-		this->_hit_pts -= (amount - this->_armor_dmg_reduction);
-		if (this->_hit_pts > 0)
-			std::cout << "[" << this->_name << "]" << " -- Extra ouch! That hurts!" << " Got " << this->_hit_pts << " hp left" <<std::endl;
-		else
-		{
-			this->_hit_pts = 0;
-			std::cout << "[" << this->_name << "]" << " -- Huh, robot's don't do that...  I feel exploded " << " Got " << this->_hit_pts << " hp left" <<std::endl;
-		}
-	}
-	return ;
-}
-
-
-void		FragTrap::beRepaired(unsigned int amount)
-{
-	if (this->_hit_pts == this->_max_hit_pts)
-		std::cout << "[" << this->_name << "]" << " -- No thanks already got everything I need!" <<std::endl;
-	else
-	{
-		this->_hit_pts += amount;
-		if (this->_hit_pts > this->_max_hit_pts)
-		{
-			this->_hit_pts = this->_max_hit_pts;
-			std::cout << "[" << this->_name << "]" << " -- Sweet life juice!" << " Got " << this->_hit_pts << " hp right now" <<std::endl;
-		}
-		else
-			std::cout << "[" << this->_name << "]" << " -- Health over here!" << " Got " << this->_hit_pts << " hp right now" <<std::endl;
-	}
 	return ;
 }
 
