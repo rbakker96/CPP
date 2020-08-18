@@ -41,7 +41,6 @@ fclean: clean
 	@echo "Deleting			$(WHITE)./ex00"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
-	@/bin/rm -f *.replace
 
 re: fclean all
 
