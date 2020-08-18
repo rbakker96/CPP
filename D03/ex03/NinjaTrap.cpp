@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/17 20:24:51 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/18 11:38:27 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:44:56 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ NinjaTrap::NinjaTrap(void) : 	ClapTrap()
 	this->_energy_pts = 120;
 	this->_max_energy_pts = 120;
 	this->_level = 1;
-	this->_name = "Interplanetary Ninja Assassin";
+	this->_name = "NINJATRAP";
 	this->_melee_attack_dmg = 60;
 	this->_ranged_attack_dmg = 5;
 	this->_armor_dmg_reduction = 0;

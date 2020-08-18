@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:37 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/18 17:18:54 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:41:07 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void		FragTrap::vaulthunter_dot_exe(std::string const & target)
 	else
 	{
 		this->_energy_pts += 25;
-		std::cout << '\n' << "[" << this->_name << "]" << " -- I have many regrets! To weak to do this... Got " << this->_energy_pts << " energy points left" << std::endl;
+		std::cout << "[" << this->_name << "]" << " -- I have many regrets! To weak to do this... Got " << this->_energy_pts << " energy points left" << std::endl;
 	}
 	return ;
 }

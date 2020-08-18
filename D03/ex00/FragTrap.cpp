@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:37 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/18 17:22:44 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:33:10 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ FragTrap::FragTrap(std::string name) : _hit_pts(100), _max_hit_pts(100), _energy
 FragTrap::FragTrap(FragTrap const &src)
 {
 	std::cout << "[" << this->_name << "]";
-	std::cout << "I'm pulling tricks outta my hat!" << std::endl;
+	std::cout << " -- I'm pulling tricks outta my hat!" << std::endl;
 	*this = src;
 	return ;
 }
@@ -65,7 +65,7 @@ FragTrap &		FragTrap::operator=(FragTrap const &rhs)
 FragTrap::~FragTrap(void)
 {
 	std::cout << "[" << this->_name << "]";
-	std::cout << " -- I can't feel my fingers! Gah! I don't have any fingers. I'm only level " << this->_level <<std::endl;
+	std::cout << " -- I can't feel my fingers! Gah! I don't have any fingers. I'm only level " << this->_level << std::endl;
 	return ;
 }
 
@@ -130,11 +130,11 @@ void		FragTrap::vaulthunter_dot_exe(std::string const & target)
 	if (this->_energy_pts >= 0 && this->_energy_pts <= this->_max_energy_pts)
 	{
 		std::array<std::string, 5> funny_attacks = {
-		"\nYou're listening to 'Short-Range Damage Radio', spoiler bullets comming your way!",
-		"\nYou really can double your fun! I will demonstrate with two rockets!",
-		"\nI will cripple you with mean words, because everbody knows words do hurt!",
-		"\nI cast magic missile and you can call me Gundalf! Avada kedavra!",
-		"\nHow many ways can I say... THROWING GRENADE?! Doesn't matter I brought you a present: EXPLOSIONS!" };
+		"You're listening to 'Short-Range Damage Radio', spoiler bullets comming your way!",
+		"You really can double your fun! I will demonstrate with two rockets!",
+		"I will cripple you with mean words, because everbody knows words do hurt!",
+		"I cast magic missile and you can call me Gundalf! Avada kedavra!",
+		"How many ways can I say... THROWING GRENADE?! Doesn't matter I brought you a present: EXPLOSIONS!" };
 
 		std::cout << funny_attacks[rand() % 5] << std::endl;
 		std::cout << "[" << this->_name << "]" << " -- That hit " << target << " hard! Causing 60 hp damage" << std::endl;
@@ -143,7 +143,7 @@ void		FragTrap::vaulthunter_dot_exe(std::string const & target)
 	else
 	{
 		this->_energy_pts += 25;
-		std::cout << '\n' << "[" << this->_name << "]" << " -- I have many regrets! To weak to do this... Got " << this->_energy_pts << " energy points left" << std::endl;
+		std::cout << "[" << this->_name << "]" << " -- I have many regrets! To weak to do this... Got " << this->_energy_pts << " energy points left" << std::endl;
 	}
 	return ;
 }

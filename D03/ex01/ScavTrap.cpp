@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/14 10:25:00 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/17 10:48:31 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:28:09 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <array>
 
 ScavTrap::ScavTrap(void) : 	_hit_pts(100), _max_hit_pts(100), _energy_pts(50),
-							_max_energy_pts(50), _level(1), _name("SC4V-TP"),
+							_max_energy_pts(50), _level(1), _name("SCAVTRAP"),
 						    _melee_attack_dmg(20), _ranged_attack_dmg(15),
 						    _armor_dmg_reduction(3)
 {
@@ -38,7 +38,7 @@ ScavTrap::ScavTrap(std::string name) : _hit_pts(100), _max_hit_pts(100), _energy
 ScavTrap::ScavTrap(ScavTrap const &src)
 {
 	std::cout << "[" << this->_name << "]";
-	std::cout << "I'm pulling tricks outta my hat!" << std::endl;
+	std::cout << " -- I'm pulling tricks outta my hat!" << std::endl;
 	*this = src;
 	return ;
 }
@@ -65,7 +65,7 @@ ScavTrap &		ScavTrap::operator=(ScavTrap const &rhs)
 ScavTrap::~ScavTrap(void)
 {
 	std::cout << "[" << this->_name << "]";
-	std::cout << " -- Why did they build me out of galvanized flesh?!. I'm only level " << this->_level <<std::endl;
+	std::cout << " -- Why did they build me out of galvanized flesh?!. I'm only level " << this->_level << std::endl;
 	return ;
 }
 
@@ -129,11 +129,11 @@ void		ScavTrap::challengeNewcomer(std::string const & target)
 	if (this->_max_energy_pts >= this->_energy_pts)
 	{
 		std::array<std::string, 5> challenges = {
-		"\nI challenge you to a dance battle, but beware you won't have a chance against my sick moves!",
-		"\nI challenge you to a karaoke sing off, stay sharp if you snooze you lose!",
-		"\nI challenge you to oilpong, your parts will not be able to handle all that oil!",
-		"\nI challenge you to dodge all my bullets from my bullets tornado, you probably don't and die",
-		"\nI challenge you to outrun my bullets, so you better start running my friend!" };
+		"I challenge you to a dance battle, but beware you won't have a chance against my sick moves!",
+		"I challenge you to a karaoke sing off, stay sharp if you snooze you lose!",
+		"I challenge you to oilpong, your parts will not be able to handle all that oil!",
+		"I challenge you to dodge all my bullets from my bullets tornado, you probably don't and die",
+		"I challenge you to outrun my bullets, so you better start running my friend!" };
 
 		std::cout << challenges[rand() % 5] << std::endl;
 		std::cout << "[" << this->_name << "]" << " -- That hit " << target << " hard! Causing 33 hp damage" << std::endl;

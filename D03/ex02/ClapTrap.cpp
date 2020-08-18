@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/17 09:37:50 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/17 14:31:04 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:58:02 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ ClapTrap::~ClapTrap(void)
 
 void		ClapTrap::rangeAttack(std::string const & target)
 {
-	std::cout << "\nThat guy looks an awful lot like a " << target << "!"<< std::endl;
+	std::cout << "That guy looks an awful lot like a " << target << "!"<< std::endl;
 	std::cout << "[CLAPTRAP]";
 	std::cout << "[" << this->_name << "]" << " attacks " << target << " at range" << ", causing " << this->_ranged_attack_dmg << " points of damage" << std::endl;
 	return ;
@@ -65,7 +65,7 @@ void		ClapTrap::rangeAttack(std::string const & target)
 
 void		ClapTrap::meleeAttack(std::string const & target)
 {
-	std::cout << "\nRUN FOR YOUR LIIIIIVES IT'S A " << target << "!"<< std::endl;
+	std::cout << "RUN FOR YOUR LIIIIIVES IT'S A " << target << "!"<< std::endl;
 	std::cout << "[CLAPTRAP]";
 	std::cout << "[" << this->_name << "]" << " attacks " << target << " with melee " << ", causing " << this->_melee_attack_dmg << " points of damage" << std::endl;
 	return ;
