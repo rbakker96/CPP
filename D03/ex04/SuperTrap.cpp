@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/18 11:54:34 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/18 16:53:53 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 18:04:28 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ SuperTrap::SuperTrap(void) : FragTrap(), NinjaTrap()
 	_max_hit_pts = FragTrap::_max_hit_pts;
 	_energy_pts = NinjaTrap::_energy_pts;
 	_max_energy_pts= NinjaTrap::_max_energy_pts;
-	_level = NinjaTrap::_level;
+	_level = 1;
 	_name = "Super-Assassin";
 	_melee_attack_dmg = NinjaTrap::_melee_attack_dmg;
 	_ranged_attack_dmg = FragTrap::_ranged_attack_dmg;
@@ -38,7 +38,7 @@ SuperTrap::SuperTrap(std::string name) : FragTrap(), NinjaTrap()
 	_max_hit_pts = FragTrap::_max_hit_pts;
 	_energy_pts = NinjaTrap::_energy_pts;
 	_max_energy_pts= NinjaTrap::_max_energy_pts;
-	_level = NinjaTrap::_level;
+	_level = 1;
 	_name = name;
 	_melee_attack_dmg = NinjaTrap::_melee_attack_dmg;
 	_ranged_attack_dmg = FragTrap::_ranged_attack_dmg;
