@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:08 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/16 20:01:27 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:22:30 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,17 @@ int		main(void)
 
 	//Assignation operator
 	std::cout << '\n';
-	frag_two = FragTrap("B4R-BOT");
+	frag_two = FragTrap("FR4G-TP");
 
 	//Range attacks
 	std::cout << '\n';
-	frag_one.rangeAttack("Badass");
-	frag_two.rangeAttack("Evil robot");
+	frag_one.rangeAttack("LEADER");
+	frag_two.rangeAttack("SOLDIER");
 
 	//Melee attacks
 	std::cout << '\n';
-	frag_one.meleeAttack("Crazy guy");
-	frag_two.meleeAttack("Bad boy");
+	frag_one.meleeAttack("LEADER");
+	frag_two.meleeAttack("SOLDIER");
 
 	//Take damage
 	std::cout << '\n';
@@ -51,12 +51,12 @@ int		main(void)
 
 	//vaulthunter_dot_exe
 	std::cout << '\n';
-	frag_one.vaulthunter_dot_exe("Badass");
-	frag_two.vaulthunter_dot_exe("Crazy bad boy");
-	frag_one.vaulthunter_dot_exe("Badass");
-	frag_one.vaulthunter_dot_exe("Badass");
-	frag_one.vaulthunter_dot_exe("Badass");
-	frag_one.vaulthunter_dot_exe("Badass");
+	frag_one.vaulthunter_dot_exe("LEADER");
+	frag_two.vaulthunter_dot_exe("SOLDIER");
+	frag_one.vaulthunter_dot_exe("LEADER");
+	frag_one.vaulthunter_dot_exe("LEADER");
+	frag_one.vaulthunter_dot_exe("LEADER");
+	frag_one.vaulthunter_dot_exe("LEADER");
 
 	//Destructors
 	std::cout << '\n';

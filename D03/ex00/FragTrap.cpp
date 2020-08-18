@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/12 08:32:37 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/08/17 14:29:49 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/08/18 17:22:44 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <array>
 
 FragTrap::FragTrap(void) : 	_hit_pts(100), _max_hit_pts(100), _energy_pts(100),
-							_max_energy_pts(100), _level(1), _name("FR4G-TP"),
+							_max_energy_pts(100), _level(1), _name("FRAGTRAP"),
 						    _melee_attack_dmg(30), _ranged_attack_dmg(20),
 						    _armor_dmg_reduction(5)
 {
