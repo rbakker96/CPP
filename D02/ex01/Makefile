@@ -1,4 +1,4 @@
-NAME 		= 	ex02
+NAME 		= 	ex01
 
 SOURCES		= 	main.cpp Fixed.cpp
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
 	@echo "$(GREEN)----------------------------------------------------"
-	@echo "Executable			./ex02"
+	@echo "Executable			./ex01"
 	@echo "$(GREEN)----------------------------------------------------"
 
 clean:
@@ -38,7 +38,7 @@ clean:
 
 fclean: clean
 	@echo "$(RED)----------------------------------------------------"
-	@echo "Deleting			$(WHITE)./ex02"
+	@echo "Deleting			$(WHITE)./ex01"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
 
