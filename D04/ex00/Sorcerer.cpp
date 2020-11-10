@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/19 10:58:01 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/11/09 16:00:01 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/11/10 20:04:04 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ const std::string &	Sorcerer::get_name() const
 
 std::ostream & operator<<(std::ostream & out, Sorcerer const &src)
 {
-	out << "I am " << src.get_title() << src.get_name() << ", and I like ponies" << std::endl;
+	out << "I am " << src.get_name() << ", " << src.get_title() << ", and I like ponies" << std::endl;
 	return (out);
 }
 

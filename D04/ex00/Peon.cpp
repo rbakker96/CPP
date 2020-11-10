@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/19 10:58:49 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/11/10 19:56:15 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/11/10 20:02:18 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,14 @@
 #include <string>
 #include <array>
 
-Peon::Peon(void) : Victim()
+Peon::Peon(void) : Victim("PEONEERER")
 {
-	this->_name = "PEONEERER";
 	std::cout << "Zog zog." << std::endl;
 	return ;
 }
 
-Peon::Peon(std::string name) : Victim()
+Peon::Peon(std::string name) : Victim(name)
 {
-	this->_name = name;
 	std::cout << "Zog zog." << std::endl;
 	return ;
 }
