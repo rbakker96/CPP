@@ -6,7 +6,7 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/19 10:58:01 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/11/05 17:42:21 by rbakker       ########   odam.nl         */
+/*   Updated: 2020/11/09 16:00:01 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 #include <string>
 #include <array>
 
-// Sorcerer::Sorcerer(void)
-// {
-// 	return ;
-// }
+Sorcerer::Sorcerer(void)
+{
+	return ;
+}
 
 Sorcerer::Sorcerer(std::string name, std::string title) : _name(name), _title(title)
 {
@@ -40,6 +40,27 @@ Sorcerer &		Sorcerer::operator=(Sorcerer const &rhs)
 		this->_title = rhs._title;
 	}
 	return (*this);
+}
+
+void Sorcerer::polymorph(Victim const &target) const
+{
+	target.getPolymorphed();
+}
+
+const std::string &	Sorcerer::get_title() const
+{
+	return (this->_title);
+}
+
+const std::string &	Sorcerer::get_name() const
+{
+	return (this->_name);
+}
+
+std::ostream & operator<<(std::ostream & out, Sorcerer const &src)
+{
+	out << "I am " << src.get_title() << src.get_name() << ", and I like ponies" << std::endl;
+	return (out);
 }
 
 Sorcerer::~Sorcerer(void)
