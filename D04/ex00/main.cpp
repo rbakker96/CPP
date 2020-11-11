@@ -6,13 +6,14 @@
 /*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/19 10:57:41 by roybakker     #+#    #+#                 */
-/*   Updated: 2020/11/10 20:01:19 by roybakker     ########   odam.nl         */
+/*   Updated: 2020/11/11 10:34:54 by roybakker     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sorcerer.hpp"
 #include "Victim.hpp"
 #include "Peon.hpp"
+#include "Useless.hpp"
 #include <string>
 #include <iostream>
 
@@ -46,11 +47,13 @@ int main()
 	Sorcerer robert("Robert", "the Magnificent");
 	Victim jim("Jimmy");
 	Peon joe("Joe");
+	Useless jerry("Jerry");
 
-	std::cout << robert << jim << joe;
+	std::cout << robert << jim << joe << jerry;
 
 	robert.polymorph(jim);
 	robert.polymorph(joe);
+	robert.polymorph(jerry);
 
 	return 0;
 }

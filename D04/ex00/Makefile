@@ -1,6 +1,6 @@
 NAME 		= 	ex00
 
-SOURCES		= 	main.cpp Sorcerer.cpp Peon.cpp Victim.cpp
+SOURCES		= 	main.cpp Sorcerer.cpp Peon.cpp Victim.cpp Useless.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
