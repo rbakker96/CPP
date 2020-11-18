@@ -26,8 +26,8 @@ AssaultTerminator::AssaultTerminator(AssaultTerminator const &src)
 
 AssaultTerminator &		AssaultTerminator::operator=(AssaultTerminator const &rhs)
 {
-	if (this != &rhs)
-		*this = rhs;
+	if (this == &rhs)
+		return (*this);
 	return (*this);
 }
 

@@ -19,56 +19,75 @@ Squad::Squad() : head(NULL)
 
 }
 
-Squad::Squad(Squad const &cpy_squad)
+Squad::Squad(const Squad& cpy_squad)
 {
-    this->head = new node;
-
-	if (cpy_squad.head)
-	{
-        node *copied_squad = cpy_squad.head;
-        node *new_squad = this->head;
-
-        while (copied_squad->next != NULL)
-        {
-            new_squad->soldier = copied_squad->soldier->clone();
-            if (copied_squad->next != NULL)
-            {
-                new_squad->next = new node;
-                copied_squad = copied_squad->next;
-            }
-        }
-        new_squad->next = NULL;
-    }
-	else
-	    this->head = NULL;
-}
-
-Squad &		Squad::operator=(Squad const &rhs)
-{
-    if (rhs.head)
+    if (cpy_squad.head)
     {
-        node *copied_squad = rhs.head;
-        node *new_squad = this->head;
-        node *tmp;
+        head = new node;
+        node *copied_squad = cpy_squad.head;
+        node *new_squad = head;
 
-        while (copied_squad->next != NULL)
+        while (1)
         {
             new_squad->soldier = copied_squad->soldier->clone();
-            delete copied_squad->soldier;
-            if (copied_squad->next != 0)
-            {
-                new_squad->next = new node;
-                tmp = copied_squad->next;
-                delete copied_squad->next;
-                copied_squad = tmp;
-            }
+            new_squad->next = NULL;
+            if (copied_squad->next == NULL)
+                break ;
+            new_squad->next = new node;
+            new_squad = new_squad->next;
+            copied_squad = copied_squad->next;
         }
-        new_squad->next = NULL;
     }
     else
-        this->head = NULL;
-    return (*this);
+        head = NULL;
 }
+
+Squad&		Squad::operator=(const Squad& rhs)
+{
+    if (head)
+    {
+        while (head->next != NULL)
+        {
+            delete head->soldier;
+            delete head;
+            head = head->next;
+        }
+        delete head->soldier;
+        delete head;
+    }
+    Squad* squad = new Squad(rhs);
+    return (*squad);
+}
+
+//Squad&		Squad::operator=(const Squad& rhs)
+//{
+//    if (rhs.head)
+//    {
+//        this->head = new node;
+//        node *copied_squad = rhs.head;
+//        node *new_squad = this->head;
+//        node *tmp = NULL;
+//
+//        while (1)
+//        {
+//            new_squad->soldier = copied_squad->soldier->clone();
+//            new_squad->next = NULL;
+//            delete copied_squad->soldier;
+//            if (copied_squad->next == NULL) {
+//                delete copied_squad;
+//                break ;
+//            }
+//            new_squad->next = new node;
+//            new_squad = new_squad->next;
+//            tmp = copied_squad->next;
+//            delete copied_squad;
+//            copied_squad = tmp;
+//        }
+//    }
+//    else
+//        this->head = NULL;
+//    return (*this);
+//}
 
 int Squad::getCount() const
 {

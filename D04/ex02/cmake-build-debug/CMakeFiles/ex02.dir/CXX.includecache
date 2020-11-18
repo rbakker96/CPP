@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/roybakker/Desktop/cpp-files/D04/ex02/AssaultTerminator.hpp
+ISpaceMarine.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
+
 /Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
 
 /Users/roybakker/Desktop/cpp-files/D04/ex02/ISquad.hpp
@@ -23,4 +27,22 @@ string
 /Users/roybakker/Desktop/cpp-files/D04/ex02/Squad.hpp
 ISquad.hpp
 /Users/roybakker/Desktop/cpp-files/D04/ex02/ISquad.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/TacticalMarine.hpp
+ISpaceMarine.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/main.cpp
+ISquad.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISquad.hpp
+ISpaceMarine.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
+AssaultTerminator.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/AssaultTerminator.hpp
+Squad.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/Squad.hpp
+TacticalMarine.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/TacticalMarine.hpp
+iostream
+-
 

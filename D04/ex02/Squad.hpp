@@ -28,10 +28,10 @@ protected:
 
 public:
 	Squad();
-	Squad(Squad const &cpy_squad);
+	Squad(const Squad& cpy_squad);
     virtual ~Squad();
 
-	Squad & operator=(Squad const &rhs);
+	Squad& operator=(const Squad& rhs);
 
 	int getCount() const;
 	ISpaceMarine* getUnit(int n) const;
