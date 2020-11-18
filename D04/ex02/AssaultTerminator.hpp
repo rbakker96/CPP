@@ -19,11 +19,10 @@ class AssaultTerminator : public ISpaceMarine
 
 protected:
 
-
 public:
-	AssaultTerminator(void);
+	AssaultTerminator();
 	AssaultTerminator(AssaultTerminator const &src);
-    virtual ~AssaultTerminator(void);
+    virtual ~AssaultTerminator();
 
 	AssaultTerminator & operator=(AssaultTerminator const &rhs);
 

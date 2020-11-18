@@ -14,43 +14,69 @@
 #include <iostream>
 #include <string>
 
-Squad::Squad(void)
+Squad::Squad() : head(NULL)
 {
-	node *new_node = new node;
 
-	new_node->next = NULL;
-	this->head = new_node;
 }
 
-Squad::Squad(Squad const &src)
+Squad::Squad(Squad const &cpy_squad)
 {
-	while (head->next != 0)
+    this->head = new node;
+
+	if (cpy_squad.head)
 	{
-		delete head->soldier;
-		head = head->next;
-	}
-	*this = src;
+        node *copied_squad = cpy_squad.head;
+        node *new_squad = this->head;
+
+        while (copied_squad->next != NULL)
+        {
+            new_squad->soldier = copied_squad->soldier->clone();
+            if (copied_squad->next != NULL)
+            {
+                new_squad->next = new node;
+                copied_squad = copied_squad->next;
+            }
+        }
+        new_squad->next = NULL;
+    }
+	else
+	    this->head = NULL;
 }
 
 Squad &		Squad::operator=(Squad const &rhs)
 {
-	if (this != &rhs)
-	{
-		while (head->next != 0)
-		{
-			delete head->soldier;
-			head = head->next;
-		}
-		*this = rhs;
-	}
-	return (*this);
+    if (rhs.head)
+    {
+        node *copied_squad = rhs.head;
+        node *new_squad = this->head;
+        node *tmp;
+
+        while (copied_squad->next != NULL)
+        {
+            new_squad->soldier = copied_squad->soldier->clone();
+            delete copied_squad->soldier;
+            if (copied_squad->next != 0)
+            {
+                new_squad->next = new node;
+                tmp = copied_squad->next;
+                delete copied_squad->next;
+                copied_squad = tmp;
+            }
+        }
+        new_squad->next = NULL;
+    }
+    else
+        this->head = NULL;
+    return (*this);
 }
 
 int Squad::getCount() const
 {
-	int i = 0;
+	int i = 1;
 	node *list = head;
 
+    if (!head)
+        return (0);
 	while (list->next != NULL)
 	{
 		list = list->next;
@@ -71,29 +97,41 @@ ISpaceMarine* Squad::getUnit(int n) const
 		list = list->next;
 		i++;
 	}
-	return (NULL);
+	if (list->soldier && i == n)
+	    return (list->soldier);
+    return NULL;
 }
 
 int Squad::push(ISpaceMarine *new_soldier)
 {
-	node *list = head;
-
-	while (list->next != NULL)
-		list = list->next;
-	list->soldier = new_soldier;
+    if (new_soldier == NULL)
+        return (getCount());
 	node *new_node = new node;
 	new_node->next = NULL;
-	list->next = new_node;
+	new_node->soldier = new_soldier;
+    if (!head)
+	    head = new_node;
+	else
+    {
+        node *list = head;
+        while (list->next != NULL)
+            list = list->next;
+        list->next = new_node;
+    }
 	return (getCount());
 }
 
-Squad::~Squad(void)
+Squad::~Squad()
 {
-	while (head->next != 0)
-	{
-		delete head->soldier;
-		delete head;
-		head = head->next;
-	}
-	delete head;
+    if (head)
+    {
+        while (head->next != 0)
+        {
+            delete head->soldier;
+            delete head;
+            head = head->next;
+        }
+        delete head->soldier;
+        delete head;
+    }
 }

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISquad.hpp
+ISpaceMarine.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISpaceMarine.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/Squad.cpp
+Squad.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/Squad.hpp
+iostream
+-
+string
+-
+
+/Users/roybakker/Desktop/cpp-files/D04/ex02/Squad.hpp
+ISquad.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex02/ISquad.hpp
+

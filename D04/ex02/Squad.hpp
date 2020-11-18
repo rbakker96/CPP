@@ -27,9 +27,9 @@ protected:
 	node *head;
 
 public:
-	Squad(void);
-	Squad(Squad const &src);
-    virtual ~Squad(void);
+	Squad();
+	Squad(Squad const &cpy_squad);
+    virtual ~Squad();
 
 	Squad & operator=(Squad const &rhs);
 
