@@ -10,4 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ICE_CLASS_H
+#define ICE_CLASS_H
+#include <string>
+#include "AMateria.hpp"
 
+class Ice : public AMateria
+{
+
+public:
+    Ice();
+    Ice(const Ice& src);
+    virtual ~Ice();
+
+    Ice & operator=(Ice const &rhs);
+
+    AMateria* clone() const;
+    void use(ICharacter& target);
+};
+
+#endif

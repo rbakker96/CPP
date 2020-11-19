@@ -10,4 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef CURE_CLASS_H
+#define CURE_CLASS_H
+#include <string>
+#include "AMateria.hpp"
 
+class Cure : public AMateria
+{
+
+public:
+    Cure();
+    Cure(Cure const &src);
+    virtual ~Cure();
+
+    Cure & operator=(Cure const &rhs);
+
+    AMateria* clone() const;
+    void use(ICharacter& target);
+};
+
+#endif
