@@ -1,6 +1,6 @@
 NAME 		= 	ex02
 
-SOURCES		= 	main.cpp Squad.cpp TacticalMarine.cpp AussaultTerminator.cpp
+SOURCES		= 	main.cpp Squad.cpp TacticalMarine.cpp AssaultTerminator.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 

@@ -19,23 +19,28 @@
 
 int main()
 {
-    Squad* squad = new Squad;
+    //First we create a simple squad
+    Squad* original_squad = new Squad;
     ISpaceMarine* bob = new TacticalMarine;
     ISpaceMarine* jim = new AssaultTerminator;
 
-    squad->push(bob);
-    squad->push(jim);
+    original_squad->push(bob);
+    original_squad->push(jim);
 
-//    Squad* second_squad = new Squad(*squad);
-    Squad second_squad = *squad;
+    //Second test the copy constructor
+    Squad* copied_squad = new Squad(*original_squad);
     ISpaceMarine* jerry = new TacticalMarine;
     ISpaceMarine* jon = new AssaultTerminator;
 
-    second_squad.push(jerry);
-    second_squad.push(jon);
+    copied_squad->push(jerry);
+    copied_squad->push(jon);
 
-//    delete squad;
- //   delete second_squad;
+    //Third assign the first simple squad to the copied squad
+    *copied_squad = *original_squad;
+
+    //delete the squads and their content
+    delete original_squad;
+    delete copied_squad;
 //    while(1){}
     return 0;
 }
@@ -45,13 +50,9 @@ int main()
 //    ISquad* squad = new Squad;
 //    ISpaceMarine* bob = new TacticalMarine;
 //    ISpaceMarine* jim = new AssaultTerminator;
-//    ISpaceMarine* jerry = new TacticalMarine;
-//    ISpaceMarine* jon = new AssaultTerminator;
 //
 //    squad->push(bob);
 //    squad->push(jim);
-//    squad->push(jerry);
-//    squad->push(jon);
 //
 //    for (int i = 0; i < squad->getCount(); ++i)
 //    {

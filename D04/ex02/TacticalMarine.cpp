@@ -26,8 +26,6 @@ TacticalMarine::TacticalMarine(TacticalMarine const &src)
 
 TacticalMarine &		TacticalMarine::operator=(TacticalMarine const &rhs)
 {
-//	if (this != &rhs)
-//    *this = rhs;
     if (&rhs == this)
         return (*this);
 	return (*this);
