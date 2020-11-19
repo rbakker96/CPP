@@ -18,6 +18,12 @@ Character::Character()
 
 }
 
+Character::Character(std::string name)
+{
+    for (int i = 0; i < 4; i++)
+        _inventory[i] = NULL;
+}
+
 Character::Character(Character const &src)
 {
     *this = src;
@@ -25,11 +31,13 @@ Character::Character(Character const &src)
 
 Character &		Character::operator=(Character const &rhs)
 {
-    if (this != &rhs)
-    {
-        this->_hp = rhs._hp;
-        this->_type = rhs._type;
-    }
+    for (int i = 0; i < _used_inventory; i++)
+        delete this->_inventory[i];
+    _used_inventory = rhs._used_inventory;
+    for (int i = 0; i < 4; i++)
+        _inventory[i] = NULL;
+    for (int i = 0; i < _used_inventory; i++)
+        _inventory[i] = rhs._inventory
     return (*this);
 }
 

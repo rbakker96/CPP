@@ -22,9 +22,11 @@ class Character : public ICharacter
 protected:
     Character();
     AMateria        *_inventory[4];
+    int             _used_inventory;
     std::string     _name;
 
 public:
+    Character(std::string name);
     Character(const Character& src);
     virtual ~Character();
 
