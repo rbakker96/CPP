@@ -13,8 +13,6 @@
 #include "Peon.hpp"
 #include "Victim.hpp"
 #include <iostream>
-#include <string>
-#include <array>
 
 Peon::Peon(void) : Victim("PEONEERER")
 {

@@ -12,8 +12,6 @@
 
 #include "Victim.hpp"
 #include <iostream>
-#include <string>
-#include <array>
 
 Victim::Victim(void)
 {

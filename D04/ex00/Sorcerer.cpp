@@ -12,8 +12,6 @@
 
 #include "Sorcerer.hpp"
 #include <iostream>
-#include <string>
-#include <array>
 
 Sorcerer::Sorcerer(void)
 {

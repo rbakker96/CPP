@@ -13,8 +13,6 @@
 #include "Victim.hpp"
 #include "Useless.hpp"
 #include <iostream>
-#include <string>
-#include <array>
 
 Useless::Useless(void) : Victim("USELESSEERER")
 {
