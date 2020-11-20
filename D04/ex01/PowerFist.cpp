@@ -12,7 +12,6 @@
 
 #include "PowerFist.hpp"
 #include <iostream>
-#include <string>
 
 PowerFist::PowerFist(void) : AWeapon("Power Fist", 8, 50)
 {

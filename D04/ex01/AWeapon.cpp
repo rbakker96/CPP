@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "AWeapon.hpp"
-#include <iostream>
 #include <string>
 
 AWeapon::AWeapon(void)

@@ -12,7 +12,6 @@
 
 #include "PlasmaRifle.hpp"
 #include <iostream>
-#include <string>
 
 PlasmaRifle::PlasmaRifle(void) : AWeapon("Plasma Rifle", 5, 21)
 {

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "Enemy.hpp"
-#include <iostream>
 #include <string>
 
 Enemy::Enemy(void)

@@ -12,7 +12,6 @@
 
 #include "RadScorpion.hpp"
 #include <iostream>
-#include <string>
 
 RadScorpion::RadScorpion(void) : Enemy(80, "RadScorpion")
 {

@@ -12,7 +12,6 @@
 
 #include "SuperMutant.hpp"
 #include <iostream>
-#include <string>
 
 SuperMutant::SuperMutant(void) : Enemy(170, "Super Mutant")
 {
