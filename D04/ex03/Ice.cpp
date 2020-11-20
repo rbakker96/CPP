@@ -33,8 +33,7 @@ Ice &		Ice::operator=(Ice const &rhs)
 
 AMateria* Ice::clone() const
 {
-    AMateria* new_materia = new Ice;
-    *new_materia = *this;
+    AMateria* new_materia = new Ice(*this);
     return (new_materia);
 }
 

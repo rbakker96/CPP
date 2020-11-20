@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <string>
-#include <iostream>
 #include "AMateria.hpp"
 #include "Character.hpp"
 #include "Cure.hpp"
@@ -47,7 +46,6 @@ int main()
     delete me;
     delete you;
     delete src;
-    while (1) {}
     return 0;
 }
 

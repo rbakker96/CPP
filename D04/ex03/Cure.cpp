@@ -32,8 +32,7 @@ Cure &		Cure::operator=(Cure const &rhs)
 
 AMateria* Cure::clone() const
 {
-    AMateria* new_materia = new Cure;
-    *new_materia = *this;
+    AMateria* new_materia = new Cure(*this);
     return (new_materia);
 }
 
