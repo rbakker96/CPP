@@ -22,7 +22,6 @@ class Character : public ICharacter
 protected:
     Character();
     AMateria        *_inventory[4];
-    int             _used_inventory;
     std::string     _name;
 
 public:
@@ -33,7 +32,7 @@ public:
     Character & operator=(const Character& rhs);
 
     const std::string& getName() const;
-    void equip(AMateria* m);
+    void equip(AMateria* materia);
     void unequip(int idx);
     void use(int idx, ICharacter& target);
 };

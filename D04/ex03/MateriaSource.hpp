@@ -13,9 +13,10 @@
 #ifndef MATERIASOURCE_CLASS_H
 #define MATERIASOURCE_CLASS_H
 #include <string>
+#include "IMateriaSource.hpp"
 #include "AMateria.hpp"
 
-class MateriaSource : public AMateria
+class MateriaSource : public IMateriaSource
 {
 
 protected:

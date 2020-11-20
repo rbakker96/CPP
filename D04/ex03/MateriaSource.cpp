@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-MateriaSource::MateriaSource()
+MateriaSource::MateriaSource() : _used_srcs(0)
 {
     for (int i = 0; i < 4; i++)
        _materia_srcs[i] = NULL;
@@ -53,9 +53,8 @@ void MateriaSource::learnMateria(AMateria* materia)
 AMateria* MateriaSource::createMateria(std::string const & type)
 {
     for (int i = 0; i < _used_srcs; i++) {
-        if (_materia_srcs[i]->getType().compare(type) == 0)
+        if (_materia_srcs[i]->getType() == type)
             return (_materia_srcs[i]->clone());
-        i++;
     }
     return NULL;
 }

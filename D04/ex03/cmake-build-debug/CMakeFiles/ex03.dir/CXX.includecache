@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/roybakker/Desktop/cpp-files/D04/ex03/AMateria.hpp
+string
+-
+ICharacter.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/ICharacter.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex03/Character.cpp
+Character.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/Character.hpp
+AMateria.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/AMateria.hpp
+string
+-
+
+/Users/roybakker/Desktop/cpp-files/D04/ex03/Character.hpp
+string
+-
+ICharacter.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/ICharacter.hpp
+AMateria.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/AMateria.hpp
+
+/Users/roybakker/Desktop/cpp-files/D04/ex03/ICharacter.hpp
+string
+-
+AMateria.hpp
+/Users/roybakker/Desktop/cpp-files/D04/ex03/AMateria.hpp
+

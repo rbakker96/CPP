@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
@@ -18,7 +19,7 @@ AMateria::AMateria(void)
 
 }
 
-AMateria::AMateria(const std::string& type) : _type(type), _xp(0)
+AMateria::AMateria(const std::string& type) : _xp(0), _type(type)
 {
 
 }
@@ -31,10 +32,7 @@ AMateria::AMateria(const AMateria& src)
 AMateria &		AMateria::operator=(AMateria const &rhs) //type is const
 {
     if (this != &rhs)
-    {
-        this->_type = rhs._type;
         this->_xp = rhs._xp;
-    }
     return (*this);
 }
 
@@ -55,7 +53,8 @@ void AMateria::setXP(unsigned int new_xp)
 
 void AMateria::use(ICharacter& target)
 {
-    this->_xp += 10;
+    _xp += 10;
+    std::cout << target.getName() << " won't be hurt" << std::endl;
 }
 
 AMateria::~AMateria(void)
