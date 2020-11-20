@@ -19,6 +19,8 @@ AMateria.hpp
 /Users/roybakker/Desktop/cpp-files/D04/ex03/AMateria.hpp
 string
 -
+iostream
+-
 
 /Users/roybakker/Desktop/cpp-files/D04/ex03/Character.hpp
 string

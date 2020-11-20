@@ -17,13 +17,13 @@
 Character::Character()
 {
     for (int i = 0; i < 4; i++)
-        _inventory[i] = nullptr;
+        _inventory[i] = NULL;
 }
 
 Character::Character(std::string name) : _name(name)
 {
     for (int i = 0; i < 4; i++)
-        _inventory[i] = nullptr;
+        _inventory[i] = NULL;
 }
 
 Character::Character(Character const &src)
@@ -38,13 +38,13 @@ Character::Character(Character const &src)
 Character &		Character::operator=(Character const &rhs)
 {
     for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != nullptr)
+        if (_inventory[i] != NULL)
             delete this->_inventory[i];
     }
     for (int i = 0; i < 4; i++)
-        _inventory[i] = nullptr;
+        _inventory[i] = NULL;
     for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != nullptr)
+        if (rhs._inventory[i] != NULL)
             _inventory[i] = rhs._inventory[i]->clone();
     }
     return (*this);
@@ -58,7 +58,7 @@ const std::string& Character::getName() const
 void Character::equip(AMateria* materia)
 {
     for (int i = 0; i < 4; i++) {
-        if (_inventory[i] == nullptr) {
+        if (_inventory[i] == NULL) {
             _inventory[i] = materia;
             break ;
         }
@@ -70,14 +70,14 @@ void Character::unequip(int idx)
     for (int i = 0; i < 4; i++) {
         if (i == idx) {
             delete _inventory[idx];
-            _inventory[idx] = nullptr;
+            _inventory[idx] = NULL;
         }
     }
 }
 
 void Character::use(int idx, ICharacter& target)
 {
-    if (idx >= 0 && idx <= 3 && _inventory[idx] != nullptr) {
+    if (idx >= 0 && idx <= 3 && _inventory[idx] != NULL) {
         _inventory[idx]->use(target);
     }
 }
@@ -85,7 +85,7 @@ void Character::use(int idx, ICharacter& target)
 Character::~Character()
 {
     for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != nullptr)
+        if (_inventory[i] != NULL)
             delete this->_inventory[i];
     }
 }

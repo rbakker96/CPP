@@ -36,12 +36,12 @@ AMateria &		AMateria::operator=(AMateria const &rhs) //type is const
     return (*this);
 }
 
-const std::string& AMateria::getType() const //done
+const std::string& AMateria::getType() const
 {
     return (this->_type);
 }
 
-unsigned int AMateria::getXP() const //done
+unsigned int AMateria::getXP() const
 {
     return (this->_xp);
 }
