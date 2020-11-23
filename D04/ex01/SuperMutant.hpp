@@ -18,9 +18,9 @@ class SuperMutant : public Enemy
 {
 
 public:
-	SuperMutant(void);
+	SuperMutant();
 	SuperMutant(SuperMutant const &src);
-    virtual ~SuperMutant(void);
+    virtual ~SuperMutant();
 
 	SuperMutant & operator=(SuperMutant const &rhs);
 

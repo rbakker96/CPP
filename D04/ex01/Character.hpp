@@ -21,7 +21,7 @@ class Character
 private:
 
 protected:
-	Character(void);
+	Character();
 	std::string		_name;
 	int				_AP;
 	AWeapon	*		_weapon;
@@ -29,7 +29,7 @@ protected:
 public:
 	Character(std::string const &name);
 	Character(Character const &src);
-    ~Character(void);
+    ~Character();
 
 	Character & operator=(Character const &rhs);
 

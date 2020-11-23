@@ -13,7 +13,7 @@
 #include "RadScorpion.hpp"
 #include <iostream>
 
-RadScorpion::RadScorpion(void) : Enemy(80, "RadScorpion")
+RadScorpion::RadScorpion() : Enemy(80, "RadScorpion")
 {
 	std::cout << "* click click click *" << std::endl;
 }
@@ -33,7 +33,7 @@ RadScorpion &		RadScorpion::operator=(RadScorpion const &rhs)
 	return (*this);
 }
 
-RadScorpion::~RadScorpion(void)
+RadScorpion::~RadScorpion()
 {
 	std::cout << "* SPROTCH *" << std::endl;
 }

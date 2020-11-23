@@ -13,7 +13,7 @@
 #include "AWeapon.hpp"
 #include <string>
 
-AWeapon::AWeapon(void)
+AWeapon::AWeapon()
 {
 
 }
@@ -56,7 +56,7 @@ int AWeapon::getDamage() const
 }
 
 
-AWeapon::~AWeapon(void)
+AWeapon::~AWeapon()
 {
 
 }

@@ -13,7 +13,7 @@
 #include "PowerFist.hpp"
 #include <iostream>
 
-PowerFist::PowerFist(void) : AWeapon("Power Fist", 8, 50)
+PowerFist::PowerFist() : AWeapon("Power Fist", 8, 50)
 {
 
 }
@@ -39,7 +39,7 @@ void PowerFist::attack() const
 	std::cout << "* pschhh... SBAM! *" << std::endl;
 }
 
-PowerFist::~PowerFist(void)
+PowerFist::~PowerFist()
 {
 
 }

@@ -13,7 +13,7 @@
 #include "Enemy.hpp"
 #include <string>
 
-Enemy::Enemy(void)
+Enemy::Enemy()
 {
 
 }
@@ -57,7 +57,7 @@ void	Enemy::takeDamage(int damage)
 		this->_hp = 0;
 }
 
-Enemy::~Enemy(void)
+Enemy::~Enemy()
 {
 
 }

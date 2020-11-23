@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-Character::Character(void)
+Character::Character()
 {
 
 }
@@ -77,8 +77,12 @@ void	Character::equip(AWeapon *weapon)
 
 void	Character::attack(Enemy *enemy)
 {
-	if (_weapon == NULL)
+	if (_weapon == NULL || enemy->getHP() == 0)
 		return ;
+	if (_AP < _weapon->getAPCost()) {
+	    std::cout << "Not enough AP for attack" << std::endl;
+	    return ;
+	}
 	std::cout << _name << " attacks " << enemy->getType() << " with " << _weapon->getName() << std::endl;
 	_weapon->attack();
 	enemy->takeDamage(_weapon->getDamage());
@@ -96,7 +100,7 @@ std::ostream & operator<<(std::ostream & out, Character const &charachter)
 	return (out);
 }
 
-Character::~Character(void)
+Character::~Character()
 {
 
 }
