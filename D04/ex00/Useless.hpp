@@ -20,10 +20,10 @@ class Useless : public Victim
 
 public:
 
-	Useless(void);
+	Useless();
 	Useless(std::string name);
 	Useless(Useless const &src);
-    virtual ~Useless(void);
+    virtual ~Useless();
 
 	Useless & operator=(Useless const &rhs);
 

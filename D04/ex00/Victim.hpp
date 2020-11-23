@@ -17,14 +17,14 @@
 class Victim {
 
 protected:
-	Victim(void);
+	Victim();
 	std::string		_name;
 
 public:
 
 	Victim(std::string name);
 	Victim(Victim const &src);
-    virtual ~Victim(void);
+    virtual ~Victim();
 
 	Victim & operator=(Victim const &rhs);
 

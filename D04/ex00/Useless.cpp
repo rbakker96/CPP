@@ -14,22 +14,19 @@
 #include "Useless.hpp"
 #include <iostream>
 
-Useless::Useless(void) : Victim("USELESSEERER")
+Useless::Useless() : Victim("USELESSEERER")
 {
 	std::cout << "Quack Quack" << std::endl;
-	return ;
 }
 
 Useless::Useless(std::string name) : Victim(name)
 {
 	std::cout << "Quack Quack" << std::endl;
-	return ;
 }
 
 Useless::Useless(Useless const &src)
 {
 	*this = src;
-	return ;
 }
 
 Useless &		Useless::operator=(Useless const &rhs)
@@ -55,8 +52,7 @@ std::ostream & operator<<(std::ostream & out, Useless const &src)
 	return (out);
 }
 
-Useless::~Useless(void)
+Useless::~Useless()
 {
 	std::cout << "No 9 lives, bad luck..." << std::endl;
-	return ;
 }

@@ -13,21 +13,19 @@
 #include "Victim.hpp"
 #include <iostream>
 
-Victim::Victim(void)
+Victim::Victim()
 {
-	return ;
+
 }
 
 Victim::Victim(std::string name) : _name(name)
 {
 	std::cout << "Some random victim called " << this->_name << " just appeared!" << std::endl;
-	return ;
 }
 
 Victim::Victim(Victim const &src)
 {
 	*this = src;
-	return ;
 }
 
 Victim &		Victim::operator=(Victim const &rhs)
@@ -53,8 +51,7 @@ std::ostream & operator<<(std::ostream & out, Victim const &src)
 	return (out);
 }
 
-Victim::~Victim(void)
+Victim::~Victim()
 {
-std::cout << "Victim " << this->_name <<  " just died for no apparent reason!!" << std::endl;
-	return ;
+    std::cout << "Victim " << this->_name <<  " just died for no apparent reason!!" << std::endl;
 }

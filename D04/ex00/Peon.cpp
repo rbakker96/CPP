@@ -14,22 +14,19 @@
 #include "Victim.hpp"
 #include <iostream>
 
-Peon::Peon(void) : Victim("PEONEERER")
+Peon::Peon() : Victim("PEONEERER")
 {
 	std::cout << "Zog zog." << std::endl;
-	return ;
 }
 
 Peon::Peon(std::string name) : Victim(name)
 {
 	std::cout << "Zog zog." << std::endl;
-	return ;
 }
 
 Peon::Peon(Peon const &src)
 {
 	*this = src;
-	return ;
 }
 
 Peon &		Peon::operator=(Peon const &rhs)
@@ -55,8 +52,7 @@ std::ostream & operator<<(std::ostream & out, Peon const &src)
 	return (out);
 }
 
-Peon::~Peon(void)
+Peon::~Peon()
 {
 	std::cout << "Bleuark..." << std::endl;
-	return ;
 }

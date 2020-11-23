@@ -18,7 +18,7 @@
 class Sorcerer {
 
 private:
-	Sorcerer(void);
+	Sorcerer();
 	std::string		_name;
 	std::string		_title;
 
@@ -26,7 +26,7 @@ public:
 
 	Sorcerer(std::string name, std::string title);
 	Sorcerer(Sorcerer const &src);
-    ~Sorcerer(void);
+    ~Sorcerer();
 
 	Sorcerer & operator=(Sorcerer const &rhs);
 
@@ -34,7 +34,6 @@ public:
 
 	const std::string &		get_title() const;
 	const std::string &		get_name() const;
-
 };
 
 std::ostream & operator<<(std::ostream & out, Sorcerer const &src);

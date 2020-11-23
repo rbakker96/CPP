@@ -20,10 +20,10 @@ class Peon : public Victim
 
 public:
 
-	Peon(void);
+	Peon();
 	Peon(std::string name);
 	Peon(Peon const &src);
-    virtual ~Peon(void);
+    virtual ~Peon();
 
 	Peon & operator=(Peon const &rhs);
 
