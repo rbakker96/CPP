@@ -30,8 +30,8 @@ public:
 
     Bureacrat & operator=(Bureacrat const &rhs);
 
-    std::string getName();
-    int getGrade();
+    std::string getName() const;
+    int getGrade() const;
 
     void    decrementGrade();
     void    incrementGrade();
@@ -54,5 +54,7 @@ public:
         }
     };
 };
+
+std::ostream & operator<<(std::ostream & out, Bureacrat const &src);
 
 #endif

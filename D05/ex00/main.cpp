@@ -19,7 +19,7 @@ int main() {
         Bureacrat Bob = Bureacrat("Bob", 100);
         Bob.incrementGrade();
         Bob.incrementGrade();
-        std::cout << "The grade of " << Bob.getName() << " is " << Bob.getGrade() << std::endl;
+        std::cout << Bob;
     }
     catch (std::exception& e) {
         std::cout << e.what() << std::endl;
@@ -28,7 +28,7 @@ int main() {
         Bureacrat Bob = Bureacrat("Bob", 100);
         Bob.decrementGrade();
         Bob.decrementGrade();
-        std::cout << "The grade of " << Bob.getName() << " is " << Bob.getGrade() << std::endl;
+        std::cout << Bob;
     }
     catch (std::exception& e) {
         std::cout << e.what() << std::endl;
@@ -37,7 +37,7 @@ int main() {
         Bureacrat Bob = Bureacrat("Bob", 150);
         Bob.decrementGrade();
         Bob.decrementGrade();
-        std::cout << "The grade of " << Bob.getName() << " is " << Bob.getGrade() << std::endl;
+        std::cout << Bob;
     }
     catch (std::exception& e) {
         std::cout << e.what() << std::endl;
@@ -46,7 +46,7 @@ int main() {
         Bureacrat Bob = Bureacrat("Bob", 0);
         Bob.incrementGrade();
         Bob.incrementGrade();
-        std::cout << "The grade of " << Bob.getName() << " is " << Bob.getGrade() << std::endl;
+        std::cout << Bob;
     }
     catch (std::exception& e) {
         std::cout << e.what() << std::endl;

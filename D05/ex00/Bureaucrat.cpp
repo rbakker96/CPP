@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include <iostream>
 
 Bureacrat::Bureacrat()
 {
@@ -37,11 +38,11 @@ Bureacrat &		Bureacrat::operator=(Bureacrat const &rhs)
     return (*this);
 }
 
-std::string    Bureacrat::getName() {
+std::string     Bureacrat::getName() const {
     return (_name);
 }
 
-int    Bureacrat::getGrade() {
+int     Bureacrat::getGrade() const {
     return (_grade);
 }
 
@@ -57,6 +58,12 @@ void    Bureacrat::incrementGrade() {
         throw GradeTooLowException();
     else
         _grade -= 1;
+}
+
+std::ostream & operator<<(std::ostream & out, Bureacrat const &src)
+{
+    out << src.getName() << "'s bureacrat grade is " << src.getGrade() << std::endl;
+    return (out);
 }
 
 Bureacrat::~Bureacrat()
