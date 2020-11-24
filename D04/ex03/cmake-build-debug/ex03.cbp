@@ -113,6 +113,12 @@
 		<Unit filename="/Users/roybakker/Desktop/cpp-files/D04/ex03/main.cpp">
 			<Option target="ex03"/>
 		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex01/Form.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex01/Form.hpp">
+			<Option target="ex03"/>
+		</Unit>
 		<Unit filename="/Users/roybakker/Desktop/cpp-files/D04/ex03/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
