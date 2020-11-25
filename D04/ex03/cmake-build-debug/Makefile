@@ -305,6 +305,87 @@ Users/roybakker/Desktop/cpp-files/D05/ex01/Form.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex01/Form.cpp.s
 .PHONY : Users/roybakker/Desktop/cpp-files/D05/ex01/Form.cpp.s
 
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.o: Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.o
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.o
+
+# target to build an object file
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.o
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.o
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.i: Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.i
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.i
+
+# target to preprocess a source file
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.i
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.i
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.s: Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.s
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.s
+
+# target to generate assembly for a file
+Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.s
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp.s
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.o: Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.o
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.o
+
+# target to build an object file
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.o
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.o
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.i: Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.i
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.i
+
+# target to preprocess a source file
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.i
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.i
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.s: Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.s
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.s
+
+# target to generate assembly for a file
+Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.s
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp.s
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.o: Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.o
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.o
+
+# target to build an object file
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.o
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.o
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.i: Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.i
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.i
+
+# target to preprocess a source file
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.i
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.i
+
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.s: Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.s
+
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.s
+
+# target to generate assembly for a file
+Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.s
+.PHONY : Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -359,6 +440,15 @@ help:
 	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex01/Form.o"
 	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex01/Form.i"
 	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex01/Form.s"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.o"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.i"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.s"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.o"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.i"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.s"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.o"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.i"
+	@echo "... Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

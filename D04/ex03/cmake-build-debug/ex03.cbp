@@ -119,6 +119,24 @@
 		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex01/Form.hpp">
 			<Option target="ex03"/>
 		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/PresidentialPardonForm.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/RobotomyRequestForm.hpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.cpp">
+			<Option target="ex03"/>
+		</Unit>
+		<Unit filename="/Users/roybakker/Desktop/cpp-files/D05/ex02/ShrubberyCreationForm.hpp">
+			<Option target="ex03"/>
+		</Unit>
 		<Unit filename="/Users/roybakker/Desktop/cpp-files/D04/ex03/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
