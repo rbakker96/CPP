@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "Intern.hpp"
 #include "PresidentialPardonForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
@@ -19,34 +20,17 @@
 
 int main() {
     try {
+        Intern Barry = Intern();
         Bureacrat Bob = Bureacrat("Bob", 1);
-        PresidentialPardonForm form_one = PresidentialPardonForm("form one");
+        AForm* form_one = Barry.makeForm("PresidentialPardonForm", "form one");
         ShrubberyCreationForm form_two = ShrubberyCreationForm("form two");
         RobotomyRequestForm form_three = RobotomyRequestForm("form three");
-        Bob.signForm(Bob, form_one);
+        Bob.signForm(Bob, *form_one);
         Bob.signForm(Bob, form_two);
         Bob.signForm(Bob, form_three);
-        Bob.executeForm(form_one);
+        Bob.executeForm(*form_one);
         Bob.executeForm(form_two);
         Bob.executeForm(form_three);
-    }
-    catch (std::exception& e) {
-        std::cout << e.what() << std::endl;
-    }
-    try {
-        Bureacrat Bob = Bureacrat("Bob", 150);
-        PresidentialPardonForm form_one = PresidentialPardonForm("form one");
-        Bob.signForm(Bob, form_one);
-        Bob.executeForm(form_one);
-    }
-    catch (std::exception& e) {
-        std::cout << e.what() << std::endl;
-    }
-    try {
-        Bureacrat Bob = Bureacrat("Bob", 1);
-        PresidentialPardonForm form_one = PresidentialPardonForm("form one");
-        //Bob.signForm(Bob, form_one);
-        Bob.executeForm(form_one);
     }
     catch (std::exception& e) {
         std::cout << e.what() << std::endl;

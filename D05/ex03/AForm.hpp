@@ -31,7 +31,7 @@ private:
 public:
     AForm(std::string name, int sign_grade, int execute_grade);
     AForm(AForm const &src);
-    ~AForm();
+    virtual ~AForm();
 
     AForm & operator=(AForm const &rhs);
 

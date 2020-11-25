@@ -1,6 +1,6 @@
-NAME 		= 	ex02
+NAME 		= 	ex03
 
-SOURCES		= 	main.cpp Bureaucrat.cpp AForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp
+SOURCES		= 	main.cpp Bureaucrat.cpp AForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp Intern.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
 	@echo "$(GREEN)----------------------------------------------------"
-	@echo "Executable			./ex02"
+	@echo "Executable			./ex03"
 	@echo "$(GREEN)----------------------------------------------------"
 
 clean:
@@ -36,7 +36,7 @@ clean:
 
 fclean: clean
 	@echo "$(RED)----------------------------------------------------"
-	@echo "Deleting			$(WHITE)./ex02"
+	@echo "Deleting			$(WHITE)./ex03"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
 
