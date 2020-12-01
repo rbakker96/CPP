@@ -1,4 +1,4 @@
-NAME 		= 	ex00
+NAME 		= 	convert
 
 SOURCES		= 	main.cpp Convert.cpp
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	@$(COMPILE) $(FLAGS) $(OBJECTS) -o $(NAME)
 	@echo "$(GREEN)----------------------------------------------------"
-	@echo "Executable			./ex00"
+	@echo "Executable			./convert"
 	@echo "$(GREEN)----------------------------------------------------"
 
 clean:
@@ -36,7 +36,7 @@ clean:
 
 fclean: clean
 	@echo "$(RED)----------------------------------------------------"
-	@echo "Deleting			$(WHITE)./ex00"
+	@echo "Deleting			$(WHITE)./convert"
 	@echo "$(RED)----------------------------------------------------"
 	@/bin/rm -f $(NAME)
 

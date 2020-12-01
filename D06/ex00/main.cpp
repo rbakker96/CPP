@@ -16,15 +16,20 @@
 int     detect_type(std::string literal)
 {
     size_t i = 0;
-    const char* pseudoliterals[] = {"-inff", "+inff", "nanf", "-inf", "+inf", "nan"};
+    int char_present = 0;
 
+    const char* pseudoliterals[] = {"-inff", "+inff", "nanf", "-inf", "+inf", "nan"};
     for (int x = 0; x < 6; x++){
         if (pseudoliterals[x] == literal)
             return PSUEDO;
     }
+
     if (literal.length() == 1 && !isdigit(literal[0]))
         return CHAR;
+
     while (literal[i]) {
+        if (isalpha(literal[i]))
+            char_present++;
         if (literal[i] == '.') {
             i++;
             while (isdigit(literal[i])) {
@@ -37,6 +42,10 @@ int     detect_type(std::string literal)
             else
                 return FORMAT_ERROR;
         }
+        if (literal[i] == 'f' && i == (literal.length() - 1))
+            return FLOAT;
+        if (char_present && i == (literal.length() - 1))
+            return FLOAT;
         else if (!isdigit(literal[i]) && (i != 0 && (literal[i] == '+' || literal[i] == '-')))
             return FORMAT_ERROR;
         i++;
