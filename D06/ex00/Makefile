@@ -1,6 +1,6 @@
 NAME 		= 	ex00
 
-SOURCES		= 	main.cpp scalar.cpp
+SOURCES		= 	main.cpp Convert.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
