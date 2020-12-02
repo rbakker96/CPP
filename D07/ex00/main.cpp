@@ -1,0 +1,55 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   main.cpp                                           :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: roybakker <roybakker@student.codam.nl>       +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2020/12/02 15:19:23 by roybakker     #+#    #+#                 */
+/*   Updated: 2020/12/02 15:19:23 by roybakker     ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <iostream>
+
+template <typename T>
+void    swap(T* first, T* second) {
+    T tmp = *first;
+    *first = *second;
+    *second = tmp;
+
+    return ;
+}
+
+template <typename T>
+T    min(const T& first, const T& second) {
+    return((first < second) ? first : second);
+}
+
+template <typename T>
+T    max(const T& first, const T& second) {
+    return((first > second) ? first : second);
+}
+
+int main()
+{
+    int A = 10;
+    int B = 20;
+
+    std::cout << "Swap A = " << A << " en B = " << B << std::endl;
+    swap<int>(&A, &B);
+    std::cout << "New A = " << A << " en B = " << B << std::endl;
+    std::cout << "Min - lowest value = " << min<int>(A, B) << std::endl;
+    std::cout << "Max - highest value = " << max<int>(A, B) << std::endl;
+
+    std::cout << std::endl;
+
+    float C = 10.234;
+    float D = 20.567;
+
+    std::cout << "Swap C = " << C << " en D = " << D << std::endl;
+    swap<float>(&C, &D);
+    std::cout << "New C = " << C << " en D = " << D << std::endl;
+    std::cout << "Min - lowest value = " << min<float>(C, D) << std::endl;
+    std::cout << "Max - highest value = " << max<float>(C, D) << std::endl;
+}
