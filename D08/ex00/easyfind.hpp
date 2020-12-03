@@ -10,4 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef EASYFIND_CLASS_H
+#define EASYFIND_CLASS_H
 
+template <typename T>
+
+
+#endif
