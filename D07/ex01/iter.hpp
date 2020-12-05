@@ -23,7 +23,7 @@ void    iter(T *array, const size_t len, void print(const T& element)) {
 }
 
 template <typename T>
-void    print(T& element) {
+void    print(const T& element) {
     std::cout << element << " ";
 }
 
