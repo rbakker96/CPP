@@ -11,24 +11,7 @@
 /* ************************************************************************** */
 
 #include <iostream>
-
-template <typename T>
-void    swap(T& first, T& second) {
-    T tmp = first;
-    first = second;
-    second = tmp;
-    return ;
-}
-
-template <typename T>
-T    min(const T& first, const T& second) {
-    return((first < second) ? first : second);
-}
-
-template <typename T>
-T    max(const T& first, const T& second) {
-    return((first > second) ? first : second);
-}
+#include "whatever.hpp"
 
 //int main()
 //{
@@ -51,7 +34,7 @@ T    max(const T& first, const T& second) {
 //    std::cout << "New C = " << C << " en D = " << D << std::endl;
 //    std::cout << "Min - lowest value = " << min<float>(C, D) << std::endl;
 //    std::cout << "Max - highest value = " << max<float>(C, D) << std::endl;
-//
+//}
 
 int main( void ) {
     int a = 2;
@@ -69,5 +52,6 @@ int main( void ) {
     std::cout << "c = " << c << ", d = " << d << std::endl;
     std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
     std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
+
     return 0;
 }
