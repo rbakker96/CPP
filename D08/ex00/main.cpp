@@ -12,24 +12,36 @@
 
 #include <iostream>
 #include <vector>
+#include <list>
 #include "easyfind.hpp"
 
 int main ()
 {
+    //test with vector container
     std::vector<int> vect;
-
-    vect.push_back(11);
-    vect.push_back(22);
-    vect.push_back(33);
-    vect.push_back(44);
-    vect.push_back(55);
+    for (int i = 0; i < 5; i++)
+        vect.push_back(i);
 
     try {
-        easyfind(vect, 44);
+        easyfind(vect, 4);
         easyfind(vect, 66);
     }
     catch(std::exception &e) {
         std::cout << e.what() << std::endl;
     }
+
+    //test with list container
+    std::list<int> list;
+
+    for (int i = 10; i < 15; i++)
+        list.push_back(i);
+    try {
+        easyfind(list, 12);
+        easyfind(list, 30);
+    }
+    catch(std::exception &e) {
+        std::cout << e.what() << std::endl;
+    }
+
     return 0;
 }
