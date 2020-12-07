@@ -4,7 +4,7 @@ SOURCES		= 	main.cpp
 
 OBJECTS 	=	${SOURCES:%.cpp=%.o}
 
-FLAGS 		=	-Wall -Wextra -Werror -std=c++98
+FLAGS 		=	-Wall -Wextra -Werror -fsanitize=address -std=c++98
 COMPILE		=	clang++
 
 

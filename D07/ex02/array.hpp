@@ -23,9 +23,9 @@ private:
     T               *_array;
 
 public:
-    Array() : _n(0), _array(new T[0]) {};
+    Array() : _n(0), _array(NULL) {};
     Array(unsigned int n) : _n(n), _array(new T[n]) {};
-    ~Array(){};
+    ~Array(){delete [] _array;};
 
     Array(Array const &src) {
         _n = src._n;

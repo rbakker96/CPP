@@ -65,6 +65,5 @@ int main( void ) {
         std::cout << "Exception -> " << e.what() << std::endl;
     }
 
-
     return 0;
 }
