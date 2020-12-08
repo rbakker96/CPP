@@ -36,7 +36,7 @@ int main ()
     for (int i = 10; i < 15; i++)
         list.push_back(i);
     try {
-        easyfind(list, 12);
+        easyfind(list, 14);
         easyfind(list, 30);
     }
     catch(std::exception &e) {
