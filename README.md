@@ -12,14 +12,14 @@
 
 This project is seperated in 9 modules wich all introduce different topics of C++. The following modules are included -
 - <a href="https://github.com/rbakker96/CPP/tree/master/D00">Module 00</a> : Namespace, class, member functions, stdio stream, initialization lists, static, const, and lots of basic stuf
-- Module 01 : Memory allocation, References, Pointers to members, File streams
-- Module 02 : Ad-hoc polymorphism, operators overload and canonical classes
-- Module 03 : Inheritance
-- Module 04 : Subtype polymorphism, abstract classes, interfaces
-- Module 05 : Repetition and Exceptions
-- Module 06 : C++ Casts
-- Module 07 : c++ Templates
-- Module 08 : Templated containers, iterators, algorithms
+- <a href="https://github.com/rbakker96/CPP/tree/master/D01">Module 01</a> : Memory allocation, References, Pointers to members, File streams
+- <a href="https://github.com/rbakker96/CPP/tree/master/D02">Module 02</a> : Ad-hoc polymorphism, operators overload and canonical classes
+- <a href="https://github.com/rbakker96/CPP/tree/master/D03">Module 03</a> : Inheritance
+- <a href="https://github.com/rbakker96/CPP/tree/master/D04">Module 04</a> : Subtype polymorphism, abstract classes, interfaces
+- <a href="https://github.com/rbakker96/CPP/tree/master/D05">Module 05</a> : Repetition and Exceptions
+- <a href="https://github.com/rbakker96/CPP/tree/master/D06">Module 06</a> : C++ Casts
+- <a href="https://github.com/rbakker96/CPP/tree/master/D07">Module 07</a> : c++ Templates
+- <a href="https://github.com/rbakker96/CPP/tree/master/D08">Module 08</a> : Templated containers, iterators, algorithms
 
 
 ---
@@ -56,5 +56,3 @@ This project is seperated in 9 modules wich all introduce different topics of C+
 
 - <a href="https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/" target="_blank">File Descripter / open / read</a>
 - <a href="https://www.geeksforgeeks.org/static-variables-in-c/" target="_blank">Static Variables in C</a><p align="center">
-  <img src="https://github.com/rbakker96/images/blob/master/codam_logo.png">
-</p>
