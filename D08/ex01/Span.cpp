@@ -39,11 +39,24 @@ void    Span::addNumber(int i) {
     }
 }
 
+void    Span::addNumber(std::vector<int> input_vector) {
+    if ((input_vector.size() + _vec.size()) > _size)
+        throw FullObjectException();
+    else
+        _used = input_vector.size() + _vec.size();
+    std::vector<int> new_vec(_vec);
+    new_vec.insert(new_vec.end(), input_vector.begin(), input_vector.end());
+    _vec = new_vec;
+}
+
 int     Span::shortestSpan() {
+    int span = INT_MAX;
     if (_used == 0 || _used == 1)
         throw NoSpanException();
     std::sort(_vec.begin(), _vec.end());
-    int span = _vec[1] - _vec[0];
+    for (unsigned int i = 1; i < _used; i++)
+        if (_vec[i] - _vec[i - 1] < span)
+            span = _vec[i] - _vec[i - 1];
 
     return (span);
 }
