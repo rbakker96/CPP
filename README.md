@@ -18,7 +18,7 @@ This project is seperated in 9 modules wich all introduce different topics of C+
 - <a href="https://github.com/rbakker96/CPP/tree/master/D04">Module 04</a> : Subtype polymorphism, abstract classes, interfaces
 - <a href="https://github.com/rbakker96/CPP/tree/master/D05">Module 05</a> : Repetition and Exceptions
 - <a href="https://github.com/rbakker96/CPP/tree/master/D06">Module 06</a> : C++ Casts
-- <a href="https://github.com/rbakker96/CPP/tree/master/D07">Module 07</a> : c++ Templates
+- <a href="https://github.com/rbakker96/CPP/tree/master/D07">Module 07</a> : C++ Templates
 - <a href="https://github.com/rbakker96/CPP/tree/master/D08">Module 08</a> : Templated containers, iterators, algorithms
 
 
