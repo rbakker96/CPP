@@ -10,7 +10,7 @@
 ### Project summary
 > 4th ring Codam project
 
-This project is seperated in 9 modules wich all introduce different topics of C++. The following modules are included -
+This project is seperated in 9 modules which all introduce different topics of C++. The following modules are included -
 - <a href="https://github.com/rbakker96/CPP/tree/master/D00">Module 00</a> : Namespace, class, member functions, stdio stream, initialization lists, static, const, and lots of basic stuf
 - <a href="https://github.com/rbakker96/CPP/tree/master/D01">Module 01</a> : Memory allocation, References, Pointers to members, File streams
 - <a href="https://github.com/rbakker96/CPP/tree/master/D02">Module 02</a> : Ad-hoc polymorphism, operators overload and canonical classes
