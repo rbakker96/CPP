@@ -54,5 +54,7 @@ This project is seperated in 9 modules which all introduce different topics of C
 ### Used resources
 > Most noteworthy resources used during this project
 
-- <a href="https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/" target="_blank">File Descripter / open / read</a>
-- <a href="https://www.geeksforgeeks.org/static-variables-in-c/" target="_blank">Static Variables in C</a><p align="center">
+- <a href="http://www.cplusplus.com/" target="_blank">Cplusplus.com</a>
+- <a href="https://en.cppreference.com/w/cpp/algorithm" target="_blank">Algorithms library</a>
+- <a href="https://en.cppreference.com/w/cpp/container" target="_blank">Containers library</a>
+- <a href="https://web.stanford.edu/class/archive/cs/cs106l/cs106l.1176/lectures/lecture05/05_Templates.pdf" target="_blank">Stanford edu</a>
